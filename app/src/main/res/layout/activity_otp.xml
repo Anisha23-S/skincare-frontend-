@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ENTER OTP"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:text="We have sent an OTP code to your Registered Email."
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:text="Please enter the pin below."
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/otp_input_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_input"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:hint="Enter 6 digits pin"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Verify"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            app:backgroundTint="@null"
+            android:minHeight="45dp"
+            android:padding="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>
