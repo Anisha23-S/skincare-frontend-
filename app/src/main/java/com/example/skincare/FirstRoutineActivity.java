@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,30 +12,24 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class NormalSkinActivity extends AppCompatActivity {
+public class FirstRoutineActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_normal_skin);
-        Button btSkin = findViewById(R.id.Skin_button);
-        btSkin.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_first_routine);
 
+
+        RelativeLayout btSkin = findViewById(R.id.card1);
+        btSkin.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             // Create an Intent to start MainActivity
-            Intent intent = new Intent(NormalSkinActivity.this, NormalActivity.class);
+            Intent intent = new Intent(FirstRoutineActivity.this, RoutineFirstActivity.class);
             startActivity(intent);
 
         }
-    });
-
-    ImageView imgBack = findViewById(R.id.back_button);
-
-        imgBack.setOnClickListener(v -> {
-        // This will take you back to the previous screen
-        onBackPressed();
     });
 
     }

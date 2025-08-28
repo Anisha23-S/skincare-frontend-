@@ -15,6 +15,18 @@
         android:theme="@style/Theme.SkinCare"
         tools:targetApi="31">
         <activity
+            android:name=".RoutineSecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondRoutineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineFirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstRoutineActivity"
+            android:exported="false" />
+        <activity
             android:name=".PigmentSpotActivity"
             android:exported="false" />
         <activity
@@ -36,7 +48,7 @@
             android:name=".NiacinamideActivity"
             android:exported="false" />
         <activity
-            android:name=".Blackheads"
+            android:name=".BlackHeadsActivity"
             android:exported="false" />
         <activity
             android:name=".CombinationActivity"
@@ -51,19 +63,7 @@
             android:name=".DryActivity"
             android:exported="false" />
         <activity
-            android:name=".PigmentActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VitaminCActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BlackHeadsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".OilyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SkinProblemSolution"
+            android:name=".SkinProblemSolutionActivity"
             android:exported="false" />
         <activity
             android:name=".TabActivity"

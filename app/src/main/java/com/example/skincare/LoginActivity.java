@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Create an Intent to start MainActivity
-                Intent intent = new Intent(LoginActivity.this, PigmentSpotActivity.class);
+                Intent intent = new Intent(LoginActivity.this, TabActivity.class);
                 startActivity(intent);
 
             }

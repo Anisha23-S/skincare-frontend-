@@ -80,7 +80,7 @@
                 android:layout_toStartOf="@id/menuIcon1"
                 android:layout_alignTop="@id/image1"
                 android:layout_marginStart="12dp"
-                android:text="@string/it_s_time_to_glow"
+                android:text="Revive Your Skin"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -92,7 +92,7 @@
                 android:layout_below="@id/title1"
                 android:layout_alignStart="@id/title1"
                 android:layout_marginTop="4dp"
-                android:text="@string/don_t_forget_to_apply_your_skinglow_serum_today_for_healthy_radiant_skin_n_nstay_consistent_your_skin_deserves_the_best"
+                android:text="A fast-absorbing serum that reduces fine lines, boosts brightness, and restores your skin’s youthful glow."
                 android:textSize="13sp"
                 android:textColor="#444444" />
         </RelativeLayout>
@@ -130,7 +130,7 @@
                 android:layout_toStartOf="@id/menuIcon2"
                 android:layout_alignTop="@id/image2"
                 android:layout_marginStart="12dp"
-                android:text="@string/it_s_time_to_glow"
+                android:text="Lightweight Care, Powerful Results"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -142,7 +142,7 @@
                 android:layout_below="@id/title2"
                 android:layout_alignStart="@id/title2"
                 android:layout_marginTop="4dp"
-                android:text="@string/skin"
+                android:text="Enriched with vitamins and antioxidants, it nourishes, hydrates, and protects your skin against daily stress and pollution."
                 android:textSize="13sp"
                 android:textColor="#444444" />
         </RelativeLayout>

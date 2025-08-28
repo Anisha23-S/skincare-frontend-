@@ -1,5 +1,6 @@
 package com.example.skincare;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +62,43 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+
+        ImageView imgNextActivity = view.findViewById(R.id.image4);
+        imgNextActivity.setOnClickListener(v -> {
+            // Navigate to NextActivity
+            Intent intent = new Intent(getActivity(), SensitiveActivity.class);
+            startActivity(intent);
+        });
+
+
+        ImageView image5 = view.findViewById(R.id.image5);
+        image5.setOnClickListener(v -> {
+            // Navigate to NextActivity
+            Intent intent = new Intent(getActivity(), CombinationActivity.class);
+            startActivity(intent);
+        });
+
+
+
+        ImageView image6 = view.findViewById(R.id.image6);
+        image6.setOnClickListener(v -> {
+            // Navigate to NextActivity
+            Intent intent = new Intent(getActivity(), PigmentSpotActivity.class);
+            startActivity(intent);
+        });
+
+
+
+
+        TextView textoverlay = view.findViewById(R.id.text_overlay2);
+        textoverlay.setOnClickListener(v -> {
+            // Navigate to NextActivity
+            Intent intent = new Intent(getActivity(), DryActivity.class);
+            startActivity(intent);
+        });
+
+        return view;
     }
 }

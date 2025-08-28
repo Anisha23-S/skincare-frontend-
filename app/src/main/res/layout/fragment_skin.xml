@@ -9,11 +9,11 @@
 
     <!-- Back Button -->
     <ImageButton
-        android:id="@+id/btn_back"
+        android:id="@+id/btn_next"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
         android:contentDescription="@string/des1"
         android:layout_alignParentStart="true"
         android:layout_marginTop="12dp"
@@ -92,6 +92,7 @@
             android:padding="12dp">
 
             <ImageView
+                android:id="@+id/btnDrySkin"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/dryskin" />
@@ -115,6 +116,7 @@
             android:padding="12dp">
 
             <ImageView
+                android:id="@+id/btnOilySkin"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/oilyskin" />
@@ -138,6 +140,7 @@
             android:padding="12dp">
 
             <ImageView
+                android:id="@+id/btnNormalSkin"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/normalskin" />
@@ -161,6 +164,7 @@
             android:padding="12dp">
 
             <ImageView
+                android:id="@+id/btnCombinationSkin"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/combination_skin" />

@@ -1,5 +1,6 @@
 package com.example.skincare;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +61,50 @@ public class SkinFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_skin, container, false);
+        View view = inflater.inflate(R.layout.fragment_skin, container, false);
+
+        ImageView btnnext = view.findViewById(R.id.btn_next);
+
+        btnnext.setOnClickListener(v -> {
+            // Navigate to NextActivity
+            Intent intent = new Intent(getActivity(), SkinProblemSolutionActivity.class);
+            startActivity(intent);
+        });
+            // Find clickable layouts
+
+            // get references from the fragment layout
+            ImageView btnDrySkin = view.findViewById(R.id.btnDrySkin);
+            ImageView btnOilySkin = view.findViewById(R.id.btnOilySkin);
+            ImageView btnNormalSkin = view.findViewById(R.id.btnNormalSkin);
+            ImageView btnCombinationSkin = view.findViewById(R.id.btnCombinationSkin);
+
+            // click listeners
+            btnDrySkin.setOnClickListener(v -> {
+                Intent intent = new Intent(getActivity(), DrySkinActivity.class);
+                startActivity(intent);
+            });
+
+            btnOilySkin.setOnClickListener(v -> {
+                Intent intent = new Intent(getActivity(), OilySkinActivity.class);
+                startActivity(intent);
+            });
+
+            btnNormalSkin.setOnClickListener(v -> {
+                Intent intent = new Intent(getActivity(), NormalSkinActivity.class);
+                startActivity(intent);
+            });
+
+            btnCombinationSkin.setOnClickListener(v -> {
+                Intent intent = new Intent(getActivity(), CombinationSkinActivity.class);
+                startActivity(intent);
+            });
+
+            return view;
+        }
+
+
     }
-}
+
+
+
+

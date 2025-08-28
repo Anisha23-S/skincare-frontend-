@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SkinProblemSolution">
+    tools:context=".SkinProblemSolutionActivity">
 
 
         <!-- Back Button -->
@@ -82,6 +82,7 @@
                 android:padding="12dp">
 
                 <ImageView
+                    android:id="@+id/blackheads"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/blackheads" />
@@ -105,6 +106,7 @@
                 android:padding="12dp">
 
                 <ImageView
+                    android:id="@+id/acne"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/acne" />
@@ -128,6 +130,7 @@
                 android:padding="12dp">
 
                 <ImageView
+                    android:id="@+id/sensitive"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/sensitive" />
@@ -151,6 +154,7 @@
                 android:padding="12dp">
 
                 <ImageView
+                    android:id="@+id/pigment"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/pigment" />
